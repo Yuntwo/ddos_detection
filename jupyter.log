@@ -1,0 +1,414 @@
+[I 2024-11-07 18:57:26.733 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-11-07 18:57:26.736 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-11-07 18:57:26.740 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-11-07 18:57:26.744 ServerApp] notebook | extension was successfully linked.
+[I 2024-11-07 18:57:26.917 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-11-07 18:57:26.928 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-11-07 18:57:26.930 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-11-07 18:57:26.931 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-11-07 18:57:26.932 LabApp] JupyterLab extension loaded from /home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyterlab
+[I 2024-11-07 18:57:26.932 LabApp] JupyterLab application directory is /home/ecs-user/is5126/final-project/.venv/share/jupyter/lab
+[I 2024-11-07 18:57:26.932 LabApp] Extension Manager is 'pypi'.
+[I 2024-11-07 18:57:26.981 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-11-07 18:57:26.985 ServerApp] notebook | extension was successfully loaded.
+[I 2024-11-07 18:57:26.985 ServerApp] Serving notebooks from local directory: /home/ecs-user/is5126/final-project
+[I 2024-11-07 18:57:26.985 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-11-07 18:57:26.985 ServerApp] http://iZt4n0x0nr1s9sn2rhxxsiZ:8888/tree?token=1a7fa067e16672cfa558af1f7eca97abfa9749b40d97896f
+[I 2024-11-07 18:57:26.985 ServerApp]     http://127.0.0.1:8888/tree?token=1a7fa067e16672cfa558af1f7eca97abfa9749b40d97896f
+[I 2024-11-07 18:57:26.985 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2024-11-07 18:57:26.988 ServerApp] No web browser found: Error('could not locate runnable browser').
+[C 2024-11-07 18:57:26.988 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/ecs-user/.local/share/jupyter/runtime/jpserver-124637-open.html
+    Or copy and paste one of these URLs:
+        http://iZt4n0x0nr1s9sn2rhxxsiZ:8888/tree?token=1a7fa067e16672cfa558af1f7eca97abfa9749b40d97896f
+        http://127.0.0.1:8888/tree?token=1a7fa067e16672cfa558af1f7eca97abfa9749b40d97896f
+[I 2024-11-07 18:57:26.999 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-11-07 18:57:27.402 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977047409 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:27.402 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:27.406 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977047409 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 4.07ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:28.409 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:28.423 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 14.21ms referer=None
+[W 2024-11-07 18:57:28.433 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977048449 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:28.434 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:28.434 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977048449 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.88ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:31.416 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977051408 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:31.416 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:31.416 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977051408 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 1.11ms referer=http://8.222.238.38:8888/notebooks/Untitled.ipynb
+[W 2024-11-07 18:57:31.425 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:31.425 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.93ms referer=None
+[W 2024-11-07 18:57:31.435 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977051450 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:31.435 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:31.435 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977051450 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.83ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:32.418 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:32.418 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 1.13ms referer=None
+[W 2024-11-07 18:57:32.442 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977052445 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:32.442 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:32.443 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977052445 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.82ms referer=http://8.222.238.38:8888/notebooks/Untitled.ipynb
+[W 2024-11-07 18:57:34.464 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:34.465 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.98ms referer=None
+[W 2024-11-07 18:57:34.477 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977054492 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:34.477 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:34.477 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977054492 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.82ms referer=http://8.222.238.38:8888/notebooks/Untitled.ipynb
+[W 2024-11-07 18:57:35.503 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:35.503 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.94ms referer=None
+[W 2024-11-07 18:57:35.514 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977055528 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:35.514 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:35.514 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977055528 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.80ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:36.395 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78?1730977056408 (137.132.26.160): Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78
+[W 2024-11-07 18:57:36.395 ServerApp] wrote error: 'Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78)
+[W 2024-11-07 18:57:36.396 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78?1730977056408 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.85ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:36.595 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:36.595 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.93ms referer=None
+[W 2024-11-07 18:57:36.605 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977056620 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:36.605 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:36.605 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977056620 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.80ms referer=http://8.222.238.38:8888/notebooks/Untitled.ipynb
+[W 2024-11-07 18:57:37.540 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78/channels?session_id=297ef585-ec24-496b-a2d4-9ced620672e6 (137.132.26.160): Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78
+[W 2024-11-07 18:57:37.541 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78/channels?session_id=297ef585-ec24-496b-a2d4-9ced620672e6 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.94ms referer=None
+[W 2024-11-07 18:57:37.551 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78?1730977057566 (137.132.26.160): Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78
+[W 2024-11-07 18:57:37.551 ServerApp] wrote error: 'Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78)
+[W 2024-11-07 18:57:37.551 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78?1730977057566 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.77ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[I 2024-11-07 18:57:39.913 ServerApp] Kernel started: fa35c980-6922-4702-a736-ceb076407b12
+[I 2024-11-07 18:57:40.520 ServerApp] Connecting to kernel fa35c980-6922-4702-a736-ceb076407b12.
+[I 2024-11-07 18:57:40.573 ServerApp] Connecting to kernel fa35c980-6922-4702-a736-ceb076407b12.
+[I 2024-11-07 18:57:40.597 ServerApp] Connecting to kernel fa35c980-6922-4702-a736-ceb076407b12.
+[W 2024-11-07 18:57:41.532 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78/channels?session_id=297ef585-ec24-496b-a2d4-9ced620672e6 (137.132.26.160): Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78
+[W 2024-11-07 18:57:41.532 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78/channels?session_id=297ef585-ec24-496b-a2d4-9ced620672e6 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.93ms referer=None
+[W 2024-11-07 18:57:41.545 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78?1730977061561 (137.132.26.160): Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78
+[W 2024-11-07 18:57:41.546 ServerApp] wrote error: 'Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5da83247-96f5-4a93-b90e-11e1ae6b0e78)
+[W 2024-11-07 18:57:41.546 ServerApp] 404 GET /api/kernels/5da83247-96f5-4a93-b90e-11e1ae6b0e78?1730977061561 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.85ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:45.397 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977065408 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:45.397 ServerApp] wrote error: 'Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d)
+[W 2024-11-07 18:57:45.398 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977065408 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.85ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy_unsupervised.ipynb
+[W 2024-11-07 18:57:45.873 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:45.874 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.93ms referer=None
+[W 2024-11-07 18:57:45.888 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977065900 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:45.888 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:45.889 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977065900 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.82ms referer=http://8.222.238.38:8888/notebooks/Untitled.ipynb
+[W 2024-11-07 18:57:48.498 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:48.498 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=e0f35539-ea9f-4ed5-b3c8-50915aa179c9 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.95ms referer=None
+[W 2024-11-07 18:57:48.512 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977068526 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:48.512 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:48.512 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977068526 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.83ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy-LR%20on%20preprocessed.ipynb
+[W 2024-11-07 18:57:48.634 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:48.634 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35/channels?session_id=3e513986-e2b1-4e8c-9491-c61879eaf095 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.95ms referer=None
+[W 2024-11-07 18:57:48.645 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977068660 (137.132.26.160): Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35
+[W 2024-11-07 18:57:48.646 ServerApp] wrote error: 'Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f99923a2-9828-4a5a-96ba-efdfb4b1fb35)
+[W 2024-11-07 18:57:48.646 ServerApp] 404 GET /api/kernels/f99923a2-9828-4a5a-96ba-efdfb4b1fb35?1730977068660 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.81ms referer=http://8.222.238.38:8888/notebooks/Untitled.ipynb
+[W 2024-11-07 18:57:49.238 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d/channels?session_id=650967e8-37da-48f7-b277-fc4b942243c3 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:49.238 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d/channels?session_id=650967e8-37da-48f7-b277-fc4b942243c3 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.95ms referer=None
+[W 2024-11-07 18:57:49.249 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977069264 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:49.250 ServerApp] wrote error: 'Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d)
+[W 2024-11-07 18:57:49.250 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977069264 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.80ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy_unsupervised.ipynb
+[W 2024-11-07 18:57:52.860 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[I 2024-11-07 18:57:53.324 ServerApp] Kernel started: 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be
+[I 2024-11-07 18:57:54.874 ServerApp] Connecting to kernel fa35c980-6922-4702-a736-ceb076407b12.
+[W 2024-11-07 18:57:55.172 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d/channels?session_id=650967e8-37da-48f7-b277-fc4b942243c3 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:55.172 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d/channels?session_id=650967e8-37da-48f7-b277-fc4b942243c3 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.89ms referer=None
+[W 2024-11-07 18:57:55.182 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977075197 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:55.182 ServerApp] wrote error: 'Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d)
+[W 2024-11-07 18:57:55.182 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977075197 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.78ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy_unsupervised.ipynb
+[I 2024-11-07 18:57:55.668 ServerApp] Connecting to kernel 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be.
+[I 2024-11-07 18:57:55.683 ServerApp] Starting buffering for 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be:02ecc8f3-4003-41d6-b3de-2c07e04de3da
+[I 2024-11-07 18:57:57.103 ServerApp] Connecting to kernel 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be.
+[I 2024-11-07 18:57:57.922 ServerApp] Connecting to kernel 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be.
+[W 2024-11-07 18:57:59.407 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d/channels?session_id=650967e8-37da-48f7-b277-fc4b942243c3 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:59.407 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d/channels?session_id=650967e8-37da-48f7-b277-fc4b942243c3 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.87ms referer=None
+[W 2024-11-07 18:57:59.421 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977079436 (137.132.26.160): Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d
+[W 2024-11-07 18:57:59.421 ServerApp] wrote error: 'Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d'
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 2f966e76-241b-4789-8e10-1e4063f7b30d)
+[W 2024-11-07 18:57:59.422 ServerApp] 404 GET /api/kernels/2f966e76-241b-4789-8e10-1e4063f7b30d?1730977079436 (975bda068e3c4f9cbd8fd09e90a72bdb@137.132.26.160) 0.77ms referer=http://8.222.238.38:8888/notebooks/Friday_Dataset%20-%20Insan_Lucy_unsupervised.ipynb
+[I 2024-11-07 18:58:21.641 ServerApp] Connecting to kernel fa35c980-6922-4702-a736-ceb076407b12.
+[I 2024-11-07 18:58:21.764 ServerApp] Connecting to kernel 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be.
+[W 2024-11-07 18:58:32.018 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[I 2024-11-07 18:58:32.660 ServerApp] Connecting to kernel fa35c980-6922-4702-a736-ceb076407b12.
+[I 2024-11-07 18:58:32.689 ServerApp] Connecting to kernel 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be.
+[W 2024-11-07 18:58:32.848 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[I 2024-11-07 18:58:33.342 ServerApp] Connecting to kernel 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be.
+[I 2024-11-07 18:58:51.839 ServerApp] Starting buffering for fa35c980-6922-4702-a736-ceb076407b12:8270d445-0110-4371-bdb6-d1bfc1e4ad5f
+[I 2024-11-07 19:02:44.969 ServerApp] 302 GET / (@162.243.140.44) 0.28ms
+[I 2024-11-07 19:02:45.154 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.40ms
+[I 2024-11-07 19:07:53.411 ServerApp] Saving file at /Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb
+[W 2024-11-07 19:07:53.411 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[I 2024-11-07 19:10:40.174 ServerApp] 302 GET / (@59.126.240.2) 0.46ms
+[I 2024-11-07 19:11:54.444 ServerApp] Saving file at /Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb
+[W 2024-11-07 19:11:54.445 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[I 2024-11-07 19:13:54.595 ServerApp] Saving file at /Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb
+[W 2024-11-07 19:13:54.595 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[I 2024-11-07 19:15:55.394 ServerApp] Saving file at /Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb
+[W 2024-11-07 19:15:55.394 ServerApp] Notebook Friday_Dataset - Insan_Lucy-LR on preprocessed.ipynb is not trusted
+[W 2024-11-07 19:16:21.171 ServerApp] 404 GET /cgi-bin/luci/;stok=/locale (@5.181.190.29) 0.96ms referer=None
+[I 2024-11-07 19:16:32.435 ServerApp] 302 GET / (@162.243.140.44) 0.28ms
+[I 2024-11-07 19:16:32.617 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.38ms
+[I 2024-11-07 19:16:44.180 ServerApp] Starting buffering for 8b577a45-ebe3-4bc9-b8fd-0f84ae1587be:18bfeebd-0993-4992-87ff-0ac9289e9cfe
+[I 2024-11-07 19:19:23.732 ServerApp] Malformed HTTP message from 13.64.195.64: no colon in header line
+[I 2024-11-07 19:34:26.917 ServerApp] 302 GET / (@162.243.140.44) 0.38ms
+[I 2024-11-07 19:34:27.111 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.54ms
+[I 2024-11-07 19:46:52.959 ServerApp] 302 GET / (@162.243.140.44) 0.39ms
+[I 2024-11-07 19:46:53.139 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.52ms
+[I 2024-11-07 20:01:13.755 ServerApp] 302 GET / (@162.243.140.44) 0.38ms
+[I 2024-11-07 20:01:13.933 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.45ms
+[I 2024-11-07 20:17:26.238 ServerApp] 302 GET / (@162.243.140.44) 0.40ms
+[I 2024-11-07 20:17:26.418 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.48ms
+[I 2024-11-07 20:31:58.421 ServerApp] 302 GET / (@162.243.140.44) 0.36ms
+[I 2024-11-07 20:31:58.603 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.41ms
+[I 2024-11-07 20:46:13.896 ServerApp] 302 GET / (@162.243.140.44) 0.38ms
+[I 2024-11-07 20:46:14.082 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.40ms
+[I 2024-11-07 21:02:58.683 ServerApp] 302 GET / (@162.243.140.44) 0.37ms
+[I 2024-11-07 21:02:58.868 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.51ms
+[E 2024-11-07 21:04:52.373 ServerApp] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1753, in _execute
+        raise HTTPError(405)
+    tornado.web.HTTPError: HTTP 405: Method Not Allowed
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1298, in send_error
+        self.write_error(status_code, **kwargs)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/base/handlers.py", line 739, in write_error
+        html = self.render_template("%s.html" % status_code, **ns)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/base/handlers.py", line 665, in render_template
+        ns.update(self.template_namespace)
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/base/handlers.py", line 675, in template_namespace
+        logged_in=self.logged_in,
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/base/handlers.py", line 198, in logged_in
+        user = self.current_user
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/tornado/web.py", line 1424, in current_user
+        self._current_user = self.get_current_user()
+      File "/home/ecs-user/is5126/final-project/.venv/lib/python3.10/site-packages/jupyter_server/base/handlers.py", line 177, in get_current_user
+        raise RuntimeError(msg)
+    RuntimeError: Calling `Template404.get_current_user()` directly is deprecated in jupyter-server 2.0. Use `self.current_user` instead (works in all versions).
+[W 2024-11-07 21:04:52.374 ServerApp] 405 CONNECT example.com:443 (@154.213.184.18) 1.18ms referer=None
+[I 2024-11-07 21:16:15.237 ServerApp] 302 GET / (@162.243.140.44) 0.38ms
+[I 2024-11-07 21:16:15.424 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.49ms
+[I 2024-11-07 21:30:56.040 ServerApp] 302 GET / (@162.243.140.44) 0.37ms
+[I 2024-11-07 21:30:56.255 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.52ms
+[I 2024-11-07 21:46:13.336 ServerApp] 302 GET / (@162.243.140.44) 0.35ms
+[I 2024-11-07 21:46:13.530 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.46ms
+[I 2024-11-07 22:02:22.935 ServerApp] 302 GET / (@162.243.140.44) 0.41ms
+[I 2024-11-07 22:02:23.114 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.51ms
+[I 2024-11-07 22:19:26.109 ServerApp] 302 GET / (@162.243.140.44) 0.44ms
+[I 2024-11-07 22:19:26.308 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.48ms
+[I 2024-11-07 22:20:34.634 ServerApp] 302 GET / (@125.228.233.58) 0.44ms
+[I 2024-11-07 22:35:00.170 ServerApp] 302 GET / (@162.243.140.44) 0.37ms
+[I 2024-11-07 22:35:00.357 JupyterNotebookApp] 302 GET /tree (@162.243.140.44) 0.48ms
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

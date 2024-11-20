@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDoS Detection Monitoring Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: center; }
+        th { background-color: #f4f4f4; }
+        .high { background-color: #ffcccc; color: red; }
+        .normal { background-color: #ccffcc; color: green; }
+    </style>
+</head>
+<body>
+    <h1>DDoS Detection Monitoring Dashboard</h1>
+    <table id="alertsTable">
+        <!-- Table header fixed at the top -->
+        <thead>
+            <tr>
+                <th>Source IP</th>
+                <th>Source Port</th>
+                <th>Destination IP</th>
+                <th>Destination Port</th>
+                <th>Protocol</th>
+                <th>Flow Duration</th>
+                <th>Total Fwd Packets</th>
+                <th>Total Backward Packets</th>
+                <th>Flow IAT Std</th>
+                <th>Avg Packet Size</th>
+                <th>Avg Bwd Segment Size</th>
+                <th>Bwd Header Length</th>
+                <th>Label</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic data rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        const ddosTypes = [
+            "DrDoS_DNS", "DrDoS_LDAP", "DrDoS_MSSQL",
+            "DrDoS_NetBIOS", "DrDoS_NTP", "DrDoS_SNMP",
+            "DrDoS_SSDP", "DrDoS_UDP"
+        ];
+
+        async function fetchAlert() {
+            const response = await fetch('/get_alert');
+            const data = await response.json();
+
+            // If label is "DDoS", assign a random specific type
+            if (data.Label === "DDoS") {
+                const randomType = ddosTypes[Math.floor(Math.random() * ddosTypes.length)];
+                data.Label = randomType;
+            }
+
+            const row = document.createElement('tr');
+            row.className = data.Label.startsWith("DrDoS") ? 'high' : 'normal';
+
+            row.innerHTML = `
+                <td>${data["Source IP"]}</td>
+                <td>${data["Source Port"]}</td>
+                <td>${data["Destination IP"]}</td>
+                <td>${data["Destination Port"]}</td>
+                <td>${data["Protocol"]}</td>
+                <td>${data["Flow Duration"]}</td>
+                <td>${data["Total Fwd Packets"]}</td>
+                <td>${data["Total Backward Packets"]}</td>
+                <td>${data["Flow IAT Std"]}</td>
+                <td>${data["Avg Packet Size"]}</td>
+                <td>${data["Avg Bwd Segment Size"]}</td>
+                <td>${data["Bwd Header Length"]}</td>
+                <td>${data["Label"]}</td>
+
+            `;
+
+            const tableBody = document.querySelector('#alertsTable tbody');
+            tableBody.insertBefore(row, tableBody.firstChild);
+
+            // Limit table to showing only 20 records
+            if (tableBody.rows.length > 20) {
+                tableBody.deleteRow(-1);
+            }
+        }
+
+        // Fetch new data every 0.5 second
+        setInterval(fetchAlert, 500);
+    </script>
+</body>
+</html>

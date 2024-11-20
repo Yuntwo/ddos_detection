@@ -1,0 +1,4 @@
+auto-encoder, xxIsolation Forest, one class SVM
+utilize pytorch, GPU faster
+sequentially
+hypterparam tuning

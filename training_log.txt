@@ -1,0 +1,3 @@
+Epoch 1/1, Loss: 42048.5353, Val Loss: 0.1351
+Best Parameters: {'batch_size': 32, 'hidden_dim1': 64, 'hidden_dim2': 32, 'learning_rate': 0.001}
+Best Validation Loss: 0.1351411157635196
